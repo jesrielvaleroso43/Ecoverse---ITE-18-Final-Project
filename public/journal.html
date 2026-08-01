@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EcoVerse - Field Journal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #f5fbf2;">
+
+  <div class="journal-container">
+    <a href="index.html" class="back-link">&larr; Back to the Rainforest</a>
+    <h1>Field Journal</h1>
+    <p>Every sighting logged below was saved to the backend database and is fetched live from the server.</p>
+
+    <div id="sightings-list">
+      <p>Loading sightings...</p>
+    </div>
+  </div>
+
+  <script src="js/scene-data.js"></script>
+  <script>
+    async function loadSightings() {
+      const list = document.getElementById('sightings-list');
+      try {
+        const res = await fetch(`${API_BASE}/sightings`);
+        const sightings = await res.json();
+
+        if (sightings.length === 0) {
+          list.innerHTML = '<p>No sightings logged yet. Go explore the rainforest and click on a species!</p>';
+          return;
+        }
+
+        list.innerHTML = sightings.map((s) => `
+          <div class="sighting-card">
+            <strong>${s.speciesName}</strong>
+            <p>${s.note ? s.note : '<em>No note added.</em>'}</p>
+            <div class="meta">Logged by ${s.researcherName} &middot; ${new Date(s.timestamp).toLocaleString()}</div>
+          </div>
+        `).join('');
+      } catch (err) {
+        list.innerHTML = '<p style="color:red;">Could not load sightings. Is the server running?</p>';
+        console.error(err);
+      }
+    }
+
+    loadSightings();
+  </script>
+</body>
+</html>

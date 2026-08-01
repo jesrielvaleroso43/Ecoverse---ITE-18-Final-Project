@@ -1,0 +1,72 @@
+[
+  {
+    "id": "jaguar",
+    "name": "Jaguar",
+    "type": "Predator",
+    "scientificName": "Panthera onca",
+    "diet": "Carnivore",
+    "role": "Apex predator — keeps prey populations (capybara, frog) in balance.",
+    "funFact": "Jaguars have the strongest bite force of any big cat relative to their size, capable of piercing turtle shells.",
+    "conservationStatus": "Near Threatened"
+  },
+  {
+    "id": "crocodile",
+    "name": "Crocodile",
+    "type": "Predator",
+    "scientificName": "Crocodylus spp.",
+    "diet": "Carnivore",
+    "role": "Apex predator in rivers and wetlands; ambushes prey near water.",
+    "funFact": "Crocodiles can slow their heart rate to as low as 2-3 beats per minute while submerged.",
+    "conservationStatus": "Varies by species"
+  },
+  {
+    "id": "capybara",
+    "name": "Capybara",
+    "type": "Herbivore",
+    "scientificName": "Hydrochoerus hydrochaeris",
+    "diet": "Herbivore",
+    "role": "Grazer that helps control vegetation growth near water sources.",
+    "funFact": "Capybaras are the largest rodents in the world and are highly social, living in groups of 10-20.",
+    "conservationStatus": "Least Concern"
+  },
+  {
+    "id": "frog",
+    "name": "Rainforest Frog",
+    "type": "Omnivore",
+    "scientificName": "Dendrobatidae spp.",
+    "diet": "Insectivore",
+    "role": "Controls insect populations; sensitive indicator of ecosystem health.",
+    "funFact": "Many rainforest frogs absorb water and oxygen directly through their skin.",
+    "conservationStatus": "Many species Vulnerable"
+  },
+  {
+    "id": "colibri",
+    "name": "Hummingbird (Colibrí)",
+    "type": "Pollinator",
+    "scientificName": "Trochilidae spp.",
+    "diet": "Nectarivore",
+    "role": "Vital pollinator for flowering plants like banana trees.",
+    "funFact": "Hummingbirds can beat their wings up to 80 times per second and are the only birds that can fly backwards.",
+    "conservationStatus": "Varies by species"
+  },
+  {
+    "id": "banana-tree",
+    "name": "Banana Tree",
+    "type": "Producer",
+    "scientificName": "Musa spp.",
+    "diet": "N/A (Producer)",
+    "role": "Food source for herbivores and pollinators; provides canopy structure.",
+    "funFact": "The banana 'tree' is technically not a tree at all — it's the world's largest herbaceous flowering plant.",
+    "conservationStatus": "Not Threatened"
+  },
+  {
+    "id": "jungle-tree",
+    "name": "Jungle Tree",
+    "type": "Producer",
+    "scientificName": "Varies",
+    "diet": "N/A (Producer)",
+    "role": "Forms the rainforest canopy, providing oxygen, shelter, and food.",
+    "funFact": "A single rainforest tree can host hundreds of insect species in its canopy alone.",
+    "conservationStatus": "Habitat-dependent"
+  }
+]
