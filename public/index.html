@@ -59,9 +59,9 @@
   <div id="status-msg" class="hidden"></div>
 
   <!-- ===================== A-FRAME SCENE ===================== -->
-  <a-scene fog="type: exponential; color: #cfe8c0; density: 0.08">
+  <a-scene fog="type: exponential; color: #cfe8c0; density: 0.08" loading-screen="backgroundColor: #0f1f0f; dotsColor: #6bbf59">
 
-    <a-assets>
+    <a-assets timeout="60000">
       <!-- Textures -->
       <img id="jungle-floor" src="assets/textures/jungle_floor_diff.jpg" alt="">
       <img id="jungle-floor-nrm" src="assets/textures/jungle_floor_nor.jpg" alt="">
